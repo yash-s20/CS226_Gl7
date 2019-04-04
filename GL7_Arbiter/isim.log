@@ -23,28 +23,4 @@ at 0 ps: Note: WARNING: Behavioral models for independent clock FIFO configurati
 at 0 ps: Note: WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information. (/tb_arbiter/uut/q3/U0/gconvfifo/inst_conv_fifo/).
 at 0 ps: Note: WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information. (/tb_arbiter/uut/q4/U0/gconvfifo/inst_conv_fifo/).
 Finished circuit initialization process.
-# restart
-# run 1.00us
-Simulator is doing circuit initialization process.
-at 0 ps: Note: WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information. (/tb_arbiter/uut/q1/U0/gconvfifo/inst_conv_fifo/).
-at 0 ps: Note: WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information. (/tb_arbiter/uut/q2/U0/gconvfifo/inst_conv_fifo/).
-at 0 ps: Note: WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information. (/tb_arbiter/uut/q3/U0/gconvfifo/inst_conv_fifo/).
-at 0 ps: Note: WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information. (/tb_arbiter/uut/q4/U0/gconvfifo/inst_conv_fifo/).
-Finished circuit initialization process.
-# restart
-# run 1.00us
-Simulator is doing circuit initialization process.
-at 0 ps: Note: WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information. (/tb_arbiter/uut/q1/U0/gconvfifo/inst_conv_fifo/).
-at 0 ps: Note: WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information. (/tb_arbiter/uut/q2/U0/gconvfifo/inst_conv_fifo/).
-at 0 ps: Note: WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information. (/tb_arbiter/uut/q3/U0/gconvfifo/inst_conv_fifo/).
-at 0 ps: Note: WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information. (/tb_arbiter/uut/q4/U0/gconvfifo/inst_conv_fifo/).
-Finished circuit initialization process.
-# restart
-# run 1.00us
-Simulator is doing circuit initialization process.
-at 0 ps: Note: WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information. (/tb_arbiter/uut/q1/U0/gconvfifo/inst_conv_fifo/).
-at 0 ps: Note: WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information. (/tb_arbiter/uut/q2/U0/gconvfifo/inst_conv_fifo/).
-at 0 ps: Note: WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information. (/tb_arbiter/uut/q3/U0/gconvfifo/inst_conv_fifo/).
-at 0 ps: Note: WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information. (/tb_arbiter/uut/q4/U0/gconvfifo/inst_conv_fifo/).
-Finished circuit initialization process.
 # exit 0

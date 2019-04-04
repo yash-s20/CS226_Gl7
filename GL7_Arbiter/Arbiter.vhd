@@ -50,7 +50,7 @@ COMPONENT fifo
   );
 END COMPONENT;
 
-type QRSTATES is (EMPTY, IDLE_S, PACKET_OUT, ACK);
+type QRSTATES is (EMPTY, PACKET_OUT);
 signal p_arbit, n_arbit : QRSTATES;
 signal n_grant : STD_LOGIC_VECTOR(3 downto 0):="0000";
 signal n_data_out : STD_LOGIC_VECTOR(4 downto 0);
@@ -240,12 +240,12 @@ begin
   end case;
 end process;
 
-process(grant, ack1, ack2, ack3, ack4)
+process(n_grant, ack1, ack2, ack3, ack4)
 begin
-  rd_en1 <= grant(0) and not(ack1);
-  rd_en2 <= grant(1) and not(ack2);
-  rd_en3 <= grant(2) and not(ack3);
-  rd_en4 <= grant(3) and not(ack4);
+  rd_en1 <= n_grant(0) and not(ack1);
+  rd_en2 <= n_grant(1) and not(ack2);
+  rd_en3 <= n_grant(2) and not(ack3);
+  rd_en4 <= n_grant(3) and not(ack4);
 end process;
 
 data1: process(grant, dout1, dout2, dout3, dout4)
@@ -300,25 +300,25 @@ begin
       n_grant <= "0000";
     elsif douts(0) = '1' then
       n_grant <= "0001";
-      n_arbit <= IDLE_S;
+      n_arbit <= PACKET_OUT;
     elsif douts(1) = '1' then
       n_grant <= "0010";
-      n_arbit <= IDLE_S;
+      n_arbit <= PACKET_OUT;
     elsif douts(2) = '1' then
       n_grant <= "0100";
-      n_arbit <= IDLE_S;
+      n_arbit <= PACKET_OUT;
     else
       n_grant <= "1000";
-      n_arbit <= IDLE_S;
+      n_arbit <= PACKET_OUT;
     end if;
     
-    when IDLE_S =>
-      n_arbit <= PACKET_OUT;
-      n_grant <= grant;
-      ack1 <= '0';
-      ack2 <= '0';
-      ack3 <= '0';
-      ack4 <= '0';
+    --when PACKET_OUT =>
+    --  n_arbit <= PACKET_OUT;
+    --  n_grant <= grant;
+    --  ack1 <= '0';
+    --  ack2 <= '0';
+    --  ack3 <= '0';
+    --  ack4 <= '0';
     when others =>
 --      n_grant <= grant;
 --      if data_out(4) = '0' then
@@ -342,13 +342,13 @@ begin
             ack1 <= '1';
             if (douts(1) = '1') then
               n_grant <= "0010";
-              n_arbit <= IDLE_S;
+              n_arbit <= PACKET_OUT;
             elsif (douts(2) = '1') then
               n_grant <= "0100";
-              n_arbit <= IDLE_S;
+              n_arbit <= PACKET_OUT;
             elsif (douts(3) = '1') then
               n_grant <= "1000";
-              n_arbit <= IDLE_S;
+              n_arbit <= PACKET_OUT;
             else
               n_grant <= "0000";
               n_arbit <= EMPTY;
@@ -357,13 +357,13 @@ begin
             ack2 <= '1';
             if (douts(2) = '1') then
               n_grant <= "0100";
-              n_arbit <= IDLE_S;
+              n_arbit <= PACKET_OUT;
             elsif (douts(3) = '1') then
               n_grant <= "1000";
-              n_arbit <= IDLE_S;
+              n_arbit <= PACKET_OUT;
             elsif (douts(0) = '1') then
               n_grant <= "0001";
-              n_arbit <= IDLE_S;
+              n_arbit <= PACKET_OUT;
             else
               n_grant <= "0000";
               n_arbit <= EMPTY;
@@ -372,13 +372,13 @@ begin
             ack3 <= '1';
             if (douts(3) = '1') then
               n_grant <= "1000";
-              n_arbit <= IDLE_S;
+              n_arbit <= PACKET_OUT;
             elsif (douts(0) = '1') then
               n_grant <= "0001";
-              n_arbit <= IDLE_S;
+              n_arbit <= PACKET_OUT;
             elsif (douts(1) = '1') then
               n_grant <= "0010";
-              n_arbit <= IDLE_S;
+              n_arbit <= PACKET_OUT;
             else
               n_grant <= "0000";
               n_arbit <= EMPTY;
@@ -387,13 +387,13 @@ begin
             ack4 <= '1';
             if (douts(0) = '1') then
               n_grant <= "0001";
-              n_arbit <= IDLE_S;
+              n_arbit <= PACKET_OUT;
             elsif (douts(1) = '1') then
               n_grant <= "0010";
-              n_arbit <= IDLE_S;
+              n_arbit <= PACKET_OUT;
             elsif (douts(2) = '1') then
               n_grant <= "0100";
-              n_arbit <= IDLE_S;
+              n_arbit <= PACKET_OUT;
             else
               n_grant <= "0000";
               n_arbit <= EMPTY;

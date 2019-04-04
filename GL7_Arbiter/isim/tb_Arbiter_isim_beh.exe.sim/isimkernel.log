@@ -2,9 +2,9 @@ Command line:
    tb_Arbiter_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  40305
+     -socket  46495
 
-Thu Apr  4 22:05:19 2019
+Thu Apr  4 22:21:25 2019
 
 
  Elaboration Time: 0.02 sec
@@ -19,15 +19,12 @@ Thu Apr  4 22:05:19 2019
  Total Processes        : 352
  Total Traceable Variables  : 1327
  Total Scalar Nets and Variables : 8513
-Total Line Count : 1320
-Total Line Count : 1320
-Total Line Count : 1320
-Total Line Count : 1320
-Total Line Count : 1320
+Total Line Count : 1314
+Total Line Count : 1314
 
- Total Simulation Time: 0.18 sec
+ Total Simulation Time: 0.06 sec
 
  Current Memory Usage: 280.633 Meg
 
-Thu Apr  4 22:15:52 2019
+Thu Apr  4 22:23:12 2019
 

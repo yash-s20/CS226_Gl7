@@ -112,12 +112,13 @@ BEGIN
    begin		
       -- hold reset state for 100 ns.
       wait for 100 ns;
+		wr_en <= '1';
 		din<="00010";
 		rd_en <= '0';
       wait for wr_clk_period;
 		din<="10010";
       wait for wr_clk_period;
-		wr_en <= '1';
+--		wr_en <= '1';
 		din<="10010";
       wait for wr_clk_period;
 		wr_en<='0';
@@ -129,7 +130,7 @@ BEGIN
 		wr_en <= '0';
 		rd_en <='0';
 		wait for wr_clk_period;
-		rd_en <= '0';
+		rd_en <= '1';
       wait;
    end process;
 

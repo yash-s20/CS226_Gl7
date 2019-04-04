@@ -1,14 +1,15 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/ansh/Desktop/Academics/Semester 4/CS 254/CS226_Gl7/GL7_Arbiter/tb_queue_isim_beh.exe -prj /home/ansh/Desktop/Academics/Semester 4/CS 254/CS226_Gl7/GL7_Arbiter/tb_queue_beh.prj work.tb_queue 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/yash20/isefiles/CS226_GL7/GL7_Arbiter/tb_Arbiter_isim_beh.exe -prj /home/yash20/isefiles/CS226_GL7/GL7_Arbiter/tb_Arbiter_beh.prj work.tb_Arbiter 
 ISim P.20131013 (signature 0xfbc00daa)
-Number of CPUs detected in this system: 4
-Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/ansh/Desktop/Academics/Semester 4/CS 254/CS226_Gl7/GL7_Arbiter/ipcore_dir/fifo.vhd" into library work
-Parsing VHDL file "/home/ansh/Desktop/Academics/Semester 4/CS 254/CS226_Gl7/GL7_Arbiter/tb_queue.vhd" into library work
+Parsing VHDL file "/home/yash20/isefiles/CS226_GL7/GL7_Arbiter/ipcore_dir/fifo.vhd" into library work
+Parsing VHDL file "/home/yash20/isefiles/CS226_GL7/GL7_Arbiter/Arbiter.vhd" into library work
+Parsing VHDL file "/home/yash20/isefiles/CS226_GL7/GL7_Arbiter/tb_Arbiter.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 101752 KB
-Fuse CPU Usage: 1250 ms
+Fuse Memory Usage: 102000 KB
+Fuse CPU Usage: 990 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
@@ -17,11 +18,11 @@ Compiling architecture behavioral of entity fifo_generator_v9_3_bhv_as [\fifo_ge
 Compiling architecture behavioral of entity fifo_generator_v9_3_conv [\fifo_generator_v9_3_conv(0,0,10...]
 Compiling architecture behavioral of entity fifo_generator_v9_3 [\fifo_generator_v9_3(0,0,10,"Bla...]
 Compiling architecture fifo_a of entity fifo [fifo_default]
-Compiling architecture behavior of entity tb_queue
+Compiling architecture behavioral of entity Arbiter [arbiter_default]
+Compiling architecture behavior of entity tb_arbiter
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 13 VHDL Units
-Built simulation executable /home/ansh/Desktop/Academics/Semester 4/CS 254/CS226_Gl7/GL7_Arbiter/tb_queue_isim_beh.exe
-Fuse Memory Usage: 673852 KB
-Fuse CPU Usage: 1350 ms
-GCC CPU Usage: 900 ms
+Compiled 15 VHDL Units
+Built simulation executable /home/yash20/isefiles/CS226_GL7/GL7_Arbiter/tb_Arbiter_isim_beh.exe
+Fuse Memory Usage: 117024 KB
+Fuse CPU Usage: 1090 ms
+GCC CPU Usage: 760 ms

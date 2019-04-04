@@ -1,0 +1,3 @@
+vhdl work "ipcore_dir/fifo.vhd"
+vhdl work "Arbiter.vhd"
+vhdl work "tb_Arbiter.vhd"

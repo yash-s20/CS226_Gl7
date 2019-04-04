@@ -67,10 +67,10 @@
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_Arbiter_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_Arbiter_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_queue_beh.prj"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_Arbiter_isim_beh.wdb"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_queue_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_queue_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_queue_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
@@ -83,18 +83,18 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1554388984" xil_pn:in_ck="6702059001027236529" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1554388984">
+    <transform xil_pn:end_ts="1554395713" xil_pn:in_ck="6702059001027236529" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1554395713">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Arbiter.vhd"/>
       <outfile xil_pn:name="tb_Arbiter.vhd"/>
       <outfile xil_pn:name="tb_queue.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1554387016" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4800898436670629488" xil_pn:start_ts="1554387016">
+    <transform xil_pn:end_ts="1554390437" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-445959312119011852" xil_pn:start_ts="1554390437">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1554387016" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="1933491489994358638" xil_pn:start_ts="1554387016">
+    <transform xil_pn:end_ts="1554390437" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6908729454243741230" xil_pn:start_ts="1554390437">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -104,31 +104,29 @@
       <outfile xil_pn:name="ipcore_dir/fifo.ngc"/>
       <outfile xil_pn:name="ipcore_dir/fifo.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1554388984" xil_pn:in_ck="6702059001027236529" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1554388984">
+    <transform xil_pn:end_ts="1554395713" xil_pn:in_ck="6702059001027236529" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1554395713">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Arbiter.vhd"/>
       <outfile xil_pn:name="tb_Arbiter.vhd"/>
       <outfile xil_pn:name="tb_queue.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1554388986" xil_pn:in_ck="-6791118145504074572" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4050343304021837584" xil_pn:start_ts="1554388984">
+    <transform xil_pn:end_ts="1554395717" xil_pn:in_ck="-6791118145504074572" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1545301210379575640" xil_pn:start_ts="1554395713">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="tb_queue_beh.prj"/>
-      <outfile xil_pn:name="tb_queue_isim_beh.exe"/>
+      <outfile xil_pn:name="tb_Arbiter_beh.prj"/>
+      <outfile xil_pn:name="tb_Arbiter_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1554388987" xil_pn:in_ck="6635712398896744662" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5955458082125382051" xil_pn:start_ts="1554388986">
+    <transform xil_pn:end_ts="1554395717" xil_pn:in_ck="6635712398896744662" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7291140962159310363" xil_pn:start_ts="1554395717">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="tb_queue_isim_beh.wdb"/>
+      <outfile xil_pn:name="tb_Arbiter_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1554374557" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1554374557">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -161,7 +159,9 @@
     <transform xil_pn:end_ts="1554375028" xil_pn:in_ck="-8321749467178341700" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="1323000659149007417" xil_pn:start_ts="1554375016">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Arbiter.lso"/>
       <outfile xil_pn:name="Arbiter.ngc"/>
@@ -182,6 +182,7 @@
     <transform xil_pn:end_ts="1554375036" xil_pn:in_ck="1591314041479056040" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="6178992068582252909" xil_pn:start_ts="1554375028">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Arbiter.bld"/>
       <outfile xil_pn:name="Arbiter.ngd"/>
       <outfile xil_pn:name="Arbiter_ngdbuild.xrpt"/>
@@ -192,6 +193,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Arbiter.pcf"/>
       <outfile xil_pn:name="Arbiter_map.map"/>
       <outfile xil_pn:name="Arbiter_map.mrp"/>
@@ -205,6 +207,7 @@
     <transform xil_pn:end_ts="1554375147" xil_pn:in_ck="8026526629990450025" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-2283627392121029586" xil_pn:start_ts="1554375100">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Arbiter.ncd"/>
       <outfile xil_pn:name="Arbiter.pad"/>
       <outfile xil_pn:name="Arbiter.par"/>
@@ -219,6 +222,7 @@
     <transform xil_pn:end_ts="1554375147" xil_pn:in_ck="104986000145042380" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1554375130">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Arbiter.twr"/>
       <outfile xil_pn:name="Arbiter.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

@@ -109,44 +109,98 @@ BEGIN
 		din3<="00000";
 		din4<="00000";
 		rst <= '0';
-      wait for clk_period;
+      wait for 10*clk_period;
 		din1<="10010"; -- 2
 		din2<="00000";
 		din3<="10010";
 		din4<="00000";
 		rst <= '0';
-      wait for clk_period;
+      wait for clk_period*1;
+--		din1<="00000"; -- 2
+--		din2<="00000";
+--		din3<="00000";
+--		din4<="00000";
+--		rst <= '0';
+--		wait for clk_period*4;
 		din1<="10100";
 		din2<="00000";
 		din3<="10001";
 		din4<="00000";
 		rst <= '0';
-      wait for clk_period;
+      wait for clk_period*1;
+--		din1<="00000"; -- 2
+--		din2<="00000";
+--		din3<="00000";
+--		din4<="00000";
+--		rst <= '0';
+--		wait for clk_period*4;
 		din1<="10110";
 		din2<="00000";
 		din3<="01010";
 		din4<="00000";
 		rst <= '0';
-      wait for clk_period;
+      wait for clk_period*1;
+--		din1<="00000"; -- 2
+--		din2<="00000";
+--		din3<="00000";
+--		din4<="00000";
+--		rst <= '0';
+--		wait for clk_period*4;
 		din1<="11000";
 		din2<="10010";
 		din3<="00000";
 		din4<="00000";
 		rst <= '0';
-      wait for clk_period;
+      wait for clk_period*1;
+--		din1<="00000"; -- 2
+--		din2<="00000";
+--		din3<="00000";
+--		din4<="00000";
+--		rst <= '0';
+--		wait for clk_period*4;
 		din1<="11110";
 		din2<="10000";
 		din3<="00000";
 		din4<="10010";
 		rst <= '0';
-      wait for clk_period;
+      wait for clk_period*1;
+--		din1<="00000"; -- 2
+--		din2<="00000";
+--		din3<="00000";
+--		din4<="00000";
+--		rst <= '0';
+--		wait for clk_period*4;
 		din1<="00110";
 		din2<="10000";
 		din3<="00000";
 		din4<="11000";
 		rst <= '0';
-      wait for clk_period;
+      wait for clk_period*1;
+--		din1<="00000"; -- 2
+--		din2<="00000";
+--		din3<="00000";
+--		din4<="00000";
+--		rst <= '0';
+--		wait for clk_period*4;
 		din1<="00000";
+		din2<="00100";
+		din3<="00000";
+		din4<="00000";
+		rst <= '0';
+      wait for clk_period*1;
+--		din1<="00000"; -- 2
+--		din2<="00000";
+--		din3<="00000";
+--		din4<="00000";
+--		rst <= '0';
+--		wait for clk_period*3;
+		din1<="11001";
+		din2<="00000";
+		din3<="00000";
+		din4<="00000";
+		rst <= '0';
+      wait for clk_period;
+		din1<="00111";
 		din2<="00000";
 		din3<="00000";
 		din4<="00000";
@@ -157,19 +211,7 @@ BEGIN
 		din3<="00000";
 		din4<="00000";
 		rst <= '0';
---      wait for clk_period;
---		din1<="00000";
---		din2<="00000";
---		din3<="00000";
---		din4<="00000";
---		rst <= '0';
---      wait for clk_period;
---		din1<="00000";
---		din2<="00000";
---		din3<="00000";
---		din4<="00000";
---		rst <= '0';
---      wait for clk_period;
+      wait for clk_period;
 
 
 

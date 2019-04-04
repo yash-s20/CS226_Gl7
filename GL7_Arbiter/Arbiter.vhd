@@ -34,7 +34,7 @@ signal q1p, q2p, q3p, q4p, q1n, q2n, q3n, q4n :  QWSTATES := IDLE;
 signal wr_en1, rd_en1, wr_en2, rd_en2, wr_en3, rd_en3, wr_en4, rd_en4 : STD_LOGIC := '0';
 signal empty1, empty2, empty3, empty4 : STD_LOGIC;
 signal dout1, dout2, dout3, dout4 : STD_LOGIC_VECTOR(4 downto 0);
-COMPONENT fifoQ
+COMPONENT fifo
   PORT (
     rst : IN STD_LOGIC;
     wr_clk : IN STD_LOGIC;
@@ -55,7 +55,7 @@ signal n_grant : STD_LOGIC_VECTOR(3 downto 0):="0000";
 signal n_data_out : STD_LOGIC_VECTOR(4 downto 0);
 signal douts : STD_LOGIC_VECTOR(3 downto 0);
 begin
-q1 : fifoQ
+q1 : fifo
   PORT MAP (
     rst => rst,
     wr_clk => clk,
@@ -68,7 +68,7 @@ q1 : fifoQ
     empty => empty1,
     prog_full => prog_fullv(0)
   );
-q2 : fifoQ
+q2 : fifo
   PORT MAP (
     rst => rst,
     wr_clk => clk,
@@ -81,7 +81,7 @@ q2 : fifoQ
     empty => empty2,
     prog_full => prog_fullv(1)
   );
-q3 : fifoQ
+q3 : fifo
   PORT MAP (
     rst => rst,
     wr_clk => clk,
@@ -94,7 +94,7 @@ q3 : fifoQ
     empty => empty3,
     prog_full => prog_fullv(2)
   );
-q4 : fifoQ
+q4 : fifo
   PORT MAP (
     rst => rst,
     wr_clk => clk,
@@ -244,7 +244,7 @@ rd_en2 <= grant(1);
 rd_en3 <= grant(2);
 rd_en4 <= grant(3);
 
-data1: process(grant, dout1, dout2, doutt3, dout4)
+data1: process(grant, dout1, dout2, dout3, dout4)
 begin
 	case grant is
 		when "0000" =>

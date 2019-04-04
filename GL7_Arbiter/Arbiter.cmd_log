@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "/home/ansh/Desktop/Academics/Semester 4/CS 254/CS226_Gl7/GL7_Arbiter/Arbiter.xst" -ofn "/home/ansh/Desktop/Academics/Semester 4/CS 254/CS226_Gl7/GL7_Arbiter/Arbiter.syr" 
+xst -intstyle ise -ifn "/home/ansh/Desktop/Academics/Semester 4/CS 254/CS226_Gl7/GL7_Arbiter/Arbiter.xst" -ofn "/home/ansh/Desktop/Academics/Semester 4/CS 254/CS226_Gl7/GL7_Arbiter/Arbiter.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7a100t-csg324-3 "Arbiter.ngc" Arbiter.ngd  
+xst -intstyle ise -ifn "/home/ansh/Desktop/Academics/Semester 4/CS 254/CS226_Gl7/GL7_Arbiter/Arbiter.xst" -ofn "/home/ansh/Desktop/Academics/Semester 4/CS 254/CS226_Gl7/GL7_Arbiter/Arbiter.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7a100t-csg324-3 "Arbiter.ngc" Arbiter.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Arbiter_map.ncd Arbiter.ngd Arbiter.pcf 
+par -w -intstyle ise -ol high -mt off Arbiter_map.ncd Arbiter.ncd Arbiter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Arbiter.twx Arbiter.ncd -o Arbiter.twr Arbiter.pcf 
+xst -intstyle ise -ifn "/home/ansh/Desktop/Academics/Semester 4/CS 254/CS226_Gl7/GL7_Arbiter/Arbiter.xst" -ofn "/home/ansh/Desktop/Academics/Semester 4/CS 254/CS226_Gl7/GL7_Arbiter/Arbiter.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7a100t-csg324-3 "Arbiter.ngc" Arbiter.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Arbiter_map.ncd Arbiter.ngd Arbiter.pcf 
+par -w -intstyle ise -ol high -mt off Arbiter_map.ncd Arbiter.ncd Arbiter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Arbiter.twx Arbiter.ncd -o Arbiter.twr Arbiter.pcf 

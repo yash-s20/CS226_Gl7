@@ -1,0 +1,15 @@
+# Output products list for <fifo>
+fifo/doc/fifo_generator_v9_3_readme.txt
+fifo/doc/fifo_generator_v9_3_vinfo.html
+fifo/doc/pg057-fifo-generator.pdf
+fifo/fifo_generator_v9_3_readme.txt
+fifo.asy
+fifo.gise
+fifo.ngc
+fifo.sym
+fifo.vhd
+fifo.vho
+fifo.xco
+fifo.xise
+fifo_flist.txt
+fifo_xmdf.tcl
